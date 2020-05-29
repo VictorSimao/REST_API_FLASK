@@ -1,11 +1,11 @@
 <h1 align="center">
     <img alt="REST+API+FLASK" src="https://miro.medium.com/max/1000/1*7rsbMxdFHVmWaRH0tYZStw.png" />
     <br>
-    REST API com FLASK
+    RESTful API em PYTHON.
 </h1>
 
 <h4 align="center">
-  REST API com Python e Flask.
+  REST API em Python, utilizando o framework web Flask e tambem o Docker para virtualizar o ambiente do Postgres. Com auxilio do Postman para testar e desenvolver a API e o DBeaver para auxiliar na visualização do banco de dados.
 </h4>
 
 <p align="center">
@@ -16,11 +16,11 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
--  [Flask](https://www.jetbrains.com/pt-br/pycharm/)
--  [Docker](https://www.jetbrains.com/pt-br/pycharm/)
--  [DBeaver](https://www.jetbrains.com/pt-br/pycharm/)
--  [Postgres](https://www.jetbrains.com/pt-br/pycharm/)
--  [Postman](https://www.jetbrains.com/pt-br/pycharm/)
+-  [Flask](https://palletsprojects.com/p/flask/)
+-  [Docker](https://www.docker.com/get-started)
+-  [DBeaver](https://dbeaver.io/)
+-  [Postgres](https://hub.docker.com/_/postgres)
+-  [Postman](https://www.postman.com/)
 -  [PyCharm](https://www.jetbrains.com/pt-br/pycharm/)
 
 
@@ -29,4 +29,4 @@ This project is under the MIT license. See the [LICENSE](https://github.com/luke
 
 ---
 
-By Victor Simão :wave: [Mande um alo!](https://www.linkedin.com/in/victordiogosimao/)
+By Victor Simão :wave: [Mande um oi!](https://www.linkedin.com/in/victordiogosimao/)
