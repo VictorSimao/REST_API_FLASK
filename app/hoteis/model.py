@@ -1,23 +1,20 @@
-hoteis = [
-    {
-        'hotel_id': 'alpha',
-        'nome': 'Alpha Hotel',
-        'estrelas': 4.3,
-        'diaria': 420.34,
-        'cidade': 'Rio de Janeiro'
-    },
-    {
-        'hotel_id': 'bravo',
-        'nome': 'Bravo Hotel',
-        'estrelas': 4.4,
-        'diaria': 380.90,
-        'cidade': 'Blumenau'
-    },
-    {
-        'hotel_id': 'charlie',
-        'nome': 'Charlie Hotel',
-        'estrelas': 3.9,
-        'diaria': 320.20,
-        'cidade': 'Floripa'
-    }
-]
+from database import db
+
+
+class Hotel(db.Model):
+    __tablename__ = 'hoteis'
+
+    id = db.Column(db.String(36), primary_key=True, nullable=False)
+    nome = db.Column(db.String(128), nullable=False)
+    estrelas = db.Column(db.Float(), nullable=True)
+    diaria = db.Column(db.Float(), nullable=True)
+    cidade = db.Column(db.String(80), nullable=False)
+
+    def serialize(self) -> dict:
+        return {
+            'id': self.id,
+            'nome': self.nome,
+            'estrelas': self.estrelas,
+            'diaria': self.diaria,
+            'cidade': self.cidade
+        }

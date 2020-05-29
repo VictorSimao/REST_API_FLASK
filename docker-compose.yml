@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: postgres:11.8-alpine
+    restart: always
+    volumes:
+      - restapiflaskdb:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: victorsimao
+      POSTGRES_PASSWORD: padawan
+      POSTGRES_DB: postgres
+      TZ: America/Sao_Paulo
+
+volumes:
+  restapiflaskdb:
