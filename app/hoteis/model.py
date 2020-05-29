@@ -6,9 +6,9 @@ class Hotel(db.Model):
 
     id = db.Column(db.String(36), primary_key=True, nullable=False)
     nome = db.Column(db.String(128), nullable=False)
-    estrelas = db.Column(db.Float(), nullable=True)
-    diaria = db.Column(db.Float(), nullable=True)
-    cidade = db.Column(db.String(80), nullable=False)
+    estrelas = db.Column(db.Float(precision=1), nullable=True)
+    diaria = db.Column(db.Float(precision=2), nullable=True)
+    cidade = db.Column(db.String(40), nullable=False)
 
     def serialize(self) -> dict:
         return {
