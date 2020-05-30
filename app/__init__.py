@@ -11,7 +11,7 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
     _register_blueprint(app)
-    JWTManager(app)
+    jwt = JWTManager(app)
     return app
 
 
