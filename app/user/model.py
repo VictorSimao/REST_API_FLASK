@@ -8,9 +8,8 @@ class User(db.Model):
     login = db.Column(db.String(40), nullable=False)
     senha = db.Column(db.String(20), nullable=False)
 
-
     def serialize(self) -> dict:
         return {
             'id': self.id,
-            'login': self.login,
+            'login': self.login
         }
