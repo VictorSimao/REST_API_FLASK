@@ -2,6 +2,7 @@ from flask import Flask
 from database import db, migrate
 
 from app.hoteis.view import app_hotel
+from app.user.view import app_user
 
 def create_app():
     app = Flask(__name__)
@@ -14,3 +15,4 @@ def create_app():
 
 def _register_blueprint(app):
     app.register_blueprint(app_hotel)
+    app.register_blueprint(app_user)
